@@ -1,0 +1,55 @@
+@media(max-width:1080px) {
+    .header-row {
+        
+        column-gap: 30px;
+    }
+    
+    .header-img {
+        width: 300px;
+        border-radius: 30px;
+    }
+    .header-title {
+        font-size: 52px;}
+
+        .header-text {
+            font-size: 22px;
+           
+        }
+
+        
+.portfolio-title {
+    font-size: 42px;
+    
+}
+.contacts-title{
+    font-size: 42px;
+   
+}
+
+
+.inner-page-title {
+    font-size: 42px;
+}
+
+}
+@media (max-width; 767px) {
+    .header {
+        padding: 20px 0 40px;
+        border-bottom-right-radius: 60px;
+    }
+    .header-video {
+        border-bottom-right-radius: 60px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .header-img {
+        max-width: 100%;
+        width: auto;
+        border-radius: 30px;
+    }
+}

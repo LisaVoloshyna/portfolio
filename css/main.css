@@ -69,6 +69,8 @@ body {
 
 .header-img {
     border-radius: 80px;
+    z-index: 100; /* картинка будет на верху всех остальных картинок */
+        opacity: 1.0;
 }
 
 .header-title {
@@ -76,8 +78,17 @@ body {
     font-weight: 700;
     font-size: 60px;
     text-align: center; /* Центрирование заголовка */
-    text-decoration: underline; /* Добавление подчеркивания */
+    
 }
+.stripe {
+    width: 100%; /* Полоска будет занимать всю ширину страницы */
+    height: 5px; /* Высота полоски */
+    background-color: white; /* Синий цвет полоски */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    z-index: 101;
+    opacity: 0.3;
+    
+  }
 
 .header-text {
     margin-bottom: 20px;

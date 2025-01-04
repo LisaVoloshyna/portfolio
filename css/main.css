@@ -30,10 +30,8 @@ body {
 .header {
     position: relative;
     overflow: hidden;
-
     padding-top: 80px;
     padding-bottom: 80px;
-
     border-bottom-right-radius: 100px;
   /*background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%); */
     background-color:black;
@@ -54,8 +52,6 @@ body {
     object-fit: cover;
     object-position: center;
     border-bottom-right-radius: 100px;
-
-
     opacity: 0.3;
 }
 
@@ -111,6 +107,8 @@ body {
     color: #fff;
     line-height: 1;
     transition: all 0.2s ease-in;
+    cursor: pointer;
+    z-index: 101;
 }
 
 .btn:hover {
@@ -118,6 +116,7 @@ body {
 }
 
 .btn-outline {
+    background-color: black;
     height: 48px;
     padding: 15px 25px;
     border: 1px solid #3b3b3b;
@@ -125,10 +124,12 @@ body {
     color: #fff;
     line-height: 1;
     transition: all 0.2s ease-in;
+    cursor: pointer;
+    z-index: 101;
 }
 
 .btn-outline:hover {
-    border-color: #1782cf;
+     background-color: #1782cf;
 }
 
 /* Portfolio */
@@ -142,6 +143,7 @@ body {
     font-size: 52px;
     font-weight: 700;
     text-align: center;
+    
 }
 
 .projects {
@@ -165,13 +167,14 @@ body {
     opacity: 0.8;
 }
 
-.projects-title {
-    font-size: 22px;
+.project-title {
+    font-size: 26px;
 }
 
-.projects-title a {
+.project-title a {
     color: #202020;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 26px;
 }
 
 /* Kontakts */
@@ -204,20 +207,15 @@ body {
 
 .messenger {
     flex-grow: 1;
-
-
     display: flex;
-     column-gap: 15px;
-     align-items: center;
-
+    column-gap: 15px;
+    align-items: center;
     padding: 46px 20px;
     border-radius: 20px;
     border: 1px solid #363636;
-
     color: #fff;
     font-size: 20px;
-
-
+    cursor: pointer; 
     transition:background-color 0.2s ease-in;
 }
 .messenger:hover {
@@ -321,3 +319,67 @@ body {
     background-color: #9c9595;
 }
 
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 20px;
+    opacity: 0; 
+    transform: scale(0.95); 
+    transition: opacity 0.8s ease, background-color 0.8s ease, transform 0.8s ease; 
+}
+
+.modal.show {
+    display: flex; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    opacity: 1; 
+    transform: scale(1);
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content img {
+
+    width: auto;
+    object-fit: contain; 
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+}
+
+.close:hover {
+    background-color: #1782cf;
+}

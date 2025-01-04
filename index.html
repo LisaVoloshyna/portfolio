@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
 
-
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
 
@@ -22,7 +21,7 @@
 
             <div class="header-row">
                 
-                <img src="./img/photo.jpg" srcset="./img/photo@2x.jpg 2x" alt="photo" class="header-img">
+                <img src="./img/meinFoto.jpg" srcset="./img/photo@2x.jpg 2x" alt="photo" class="header-img" width="350px" height="450px">
 
                 <div class="header-detalis">
                     <h3 class="header-title">Voloshyna Yelyzaveta</h3>
@@ -45,64 +44,77 @@
                 <h2 class="portfolio-title">Portfolio</h2>
 
                 <div class="projects">
-                    <article class="project-item">
-                        <a href="./panto.html">
+                    <article class="project-item" id="open-modal">
+                        <a href="#">
                             <img src="./img/portfolio/portfolio/project-01.jpg" srcset="./img/portfolio/project-01@2x.jpg 2x" alt="Webseite eines Möbelgeschäfts" class="projects-img">
                         </a>
-                        <h3 class="project-title"><a href="./panto.html">Webseite eines Möbelgeschäfts</a></h3>
+                        <h3 class="project-title">
+                            <a href="#" >Webseite eines Möbelgeschäfts</a>
+                        </h3>
                     </article>
-                    <article class="project-item">
-                        <a href="./panto2.html">
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img src="./img/portfolio/projects/project-panto-full@2x.jpg" srcset="./img/portfolio/project-01@2x.jpg 2x" alt="Webseite eines Möbelgeschäfts" class="modal-img">
+                        </div>
+                    </div>
+    
+                    <article class="project-item" id="open-modal2">
+                        <a href="#">
                             <img src="./img/portfolio/portfolio/project-02.jpg" srcset="./img/portfolio/project-02@2x.jpg 2x" alt="Webseite eines Reisebüros" class="projects-img">
                         </a>
-                        <h3 class="project-title"><a href="panto2.html">Webseite eines Reisebüros</a></h3>
+                        <h3 class="project-title"><a href="#">Webseite eines Reisebüros</a></h3>
                     </article>
-                    <article class="project-item">
-                        <a href="./panto3.html">
+                    <div id="modal2" class="modal" >
+                        <div class="modal-content">
+                            <span id="close2" class="close">&times;</span>
+                            <img src="./img/portfolio/projects/project-go-travel@2x.jpg" srcset="./img/portfolio/project-01@2x.jpg 2x" alt="Webseite eines Möbelgeschäfts" class="modal-img">
+                        </div>
+                    </div>
+
+                    <article class="project-item" id="open-modal3">
+                        <a href="#">
                             <img src="./img/portfolio/portfolio/project-03.jpg" srcset="./img/portfolio/project-03@2x.jpg 2x" alt="Webseite eines Wohnkomplexes" class="projects-img">
                         </a>
-                        <h3 class="project-title"><a href="panto3.html">Webseite eines Wohnkomплекс</a></h3>
+                        <h3 class="project-title"><a href="#">Webseite eines Wohnkomplex</a></h3>
                     </article>
-                    
+                    <div id="modal3" class="modal" >
+                        <div class="modal-content">
+                            <span id="close3" class="close">&times;</span>
+                            <img src="./img/portfolio/projects/project-lofthouse@2x.jpg" srcset="./img/portfolio/project-01@2x.jpg 2x" alt="Webseite eines Möbelgeschäfts" class="modal-img">
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
-
-
         <section class="contacts" id="contacts">
             <div class="container">
-                <h2 class="contacts-title">Kontakt</h2>
-
+               <h2 class="contacts-title">Kontakt</h2>
                <div class="messengers">
-            
-                <a href="https://t.me/youraccountname" target="_blank" class="messenger">
-
-                    <img src="./img/portfolio/icons/telegram.svg" alt="Telegram" width="58px" height="58px">
-                    + 49 174 7467470
-                </a>
-
-                <a href="https://wa.me/79051234567" target="_blank" class="messenger">
-                    <img src="./img/portfolio/icons/whatsapp.svg" alt="WhatApp">
-                    + 49 174 7467470
-                </a>
-
+                    <div class="messenger">
+                        <img src="./img/portfolio/icons/telegram.svg" alt="Telegram" width="58px" height="58px">
+                        + 49 174 7467470
+                    </div>
+                    <div class="messenger">
+                        <img src="./img/portfolio/icons/whatsapp.svg" alt="WhatApp">
+                        + 49 174 7467470
+                    </div>
                </div>
             </div>
         </section>
-
-
     </main>
-
 
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <p> @Voloshyna Yelyzaveta <br>HTML</p>
-
-                <p><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwivq5uPiNeKAxXbs2gJHco5KgQYABAAGgJ3Zg&ae=2&aspm=1&co=1&ase=5&gclid=Cj0KCQiAj9m7BhD1ARIsANsIIvAzRMJLZ3DH_rYko76skHnylyGLtc408eiCFGFxNCsxFR9ZsyXCpLEaAjmdEALw_wcB&ohost=www.google.com&cid=CAESVeD2zi5bbHdlyDK5TBDsqbJER3_hiDnTNhgYWHZd8UevikPauqkwBJ9wB2WA3rStIqQTuvOTQ9A4zsWYQUoFz5yLYqIeBWp1C7nPS58Mc_kbZTUDWBM&sig=AOD64_335a7V2vMOuyySCAVDEEjAxidF1Q&q&adurl&ved=2ahUKEwjNvZSPiNeKAxVxSvEDHfsKBl8Q0Qx6BAgKEAE" target="_blank">Maket</a></p>
+                <p> @Voloshyna Yelyzaveta <br></p>
             </div>
         </div>
     </footer>
-
+    <script src="/js/main.js"></script>
+    <script src="/js/modal2.js"></script>
+    <script src="/js/modal3.js"></script>
 </body>
 </html>
